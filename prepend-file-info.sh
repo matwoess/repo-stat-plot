@@ -2,15 +2,16 @@
 
 function help() {
   echo "Usage: $(basename $0) FILE [FILE]...
-  Extract a file's extension and prepend it to the path."
+  Extract file extension and number of non-empty lines and prepend them to the path."
 }
 
-function extract_and_prepend_extension() {
+function prepend_info() {
   filepath=$1
   filename=$(basename -- "$filepath")
   extension="${filename##*.}"
   #filename="${filename%.*}"
-  printf "$extension $1\n"
+  nlines=$(grep --count '.' "$filepath")
+  printf "$extension $nlines $1\n"
 }
 
 input=""
@@ -33,6 +34,6 @@ if [[ "${1-}" =~ ^-*h(elp)?$ ]]; then
 fi
 
 for line in $input; do
-  extract_and_prepend_extension $line
+  prepend_info $line
 done
 
