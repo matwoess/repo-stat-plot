@@ -22,5 +22,12 @@ Has one or more file paths as parameter when run on its own.
 Extracts the extension of each file and outputs it with the extension prepended to the path.  
 Can also read from `stdin` when output is piped into the script. It will then do this for all file paths.  
 
+```sh
+prepend-loc-sh FILE [FILE]...
+```
+Similarly to `prepend-extension.sh` this script prepends the amount of non-empty lines of code to the file path.  
+It also can read from `stdin`.  
+
+
 ## Dependencies
  - bash
