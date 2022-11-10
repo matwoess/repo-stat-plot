@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function help() {
-  echo "Usage: $(basename $0) [FILE]...
+  echo "Usage: $(basename $0) FILE [FILE]...
   Extract a file's extension and prepend it to the path."
 }
 
