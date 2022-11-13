@@ -28,7 +28,8 @@ with fileinput.input() as finput:
         plt.pause(0.1)
 
 if fromstdin:
-    print(sorted_stats)
+    for k, v in sorted_stats.items():
+        print(f'{k}\t{v}')
 else:
     plt.show()
 
