@@ -86,8 +86,6 @@ txt 3 repo/text/notes.txt
 ./live-plot.sh data.txt
 ```
 
-TODO: insert gif
-
 ```sh
 /find-files.sh repo | ./prepend-file-info.sh | awk '{print $1 " " $2}' | ./live-plot.py > results.txt
 cat results.txt
@@ -137,7 +135,7 @@ sh	64
 
 ## Demo video
 
-TODO: add demo video with diverse repo
+[Demo Video](demo/demo.mp4)
 
 ## Dependencies
  - bash
