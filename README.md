@@ -58,6 +58,13 @@ Can also read data from `stdin`.
 
 ## Example usage:
 
+First navigate to, or checkout a (git) code repository. E.g:
+```
+git clone --depth=1 https://github.com/torvalds/linux repo
+```
+
+The use the scripts one by one, or in a pipeline.
+
 ```sh
 ./find-files.sh repo
 ```
@@ -143,3 +150,8 @@ sh	64
  - numpy
  - matplotlib
  - gnuplot
+ 
+
+## Future work/ideas
+ - specify set of valid file extensions as regex argument to the `find-files.sh` script
+ - automatically filter out binary files (e.g. mp4)
