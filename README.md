@@ -79,7 +79,7 @@ repo/files.sh
 ```
 
 ```sh
-./prepend-file-info.sh repo/extensions.sh repo/python/plotting-in-python.py repo/text/notes.txt
+./prepend-file-info.sh repo/extensions.sh repo/python/plotting\ in\ python.py repo/text/notes.txt
 ```
 
 ```
