@@ -33,6 +33,7 @@ if [[ "${1-}" =~ ^-*h(elp)?$ ]]; then
   exit 0
 fi
 
+IFS=$'\n'
 for line in $input; do
   prepend_info $line
 done

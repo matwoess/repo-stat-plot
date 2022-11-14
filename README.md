@@ -77,7 +77,7 @@ repo/files.sh
 
 ```
 sh 12 repo/extensions.sh
-py 16 repo/python/plotting-in-python.py
+py 16 repo/python/plotting in python.py
 txt 3 repo/text/notes.txt
 ```
 
