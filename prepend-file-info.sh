@@ -18,7 +18,7 @@ input=""
 if [[ -p /dev/stdin ]]; then
   input="$(cat -)"
 else
-  input="${@}"
+  input=`printf "%s\n" "${@}"`
 fi
 
 if [[ -z "${input}" ]]; then
